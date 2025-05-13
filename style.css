@@ -2,21 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Great Vibes', cursive;
-    background: url('https://github.com/user-attachments/assets/6ca5f9d7-cbd0-46d7-b0eb-b1c0717a224c') no-repeat center center fixed;
+    background: url('fundo.png') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     text-align: center;
     overflow: hidden;
-}
-
-.background-hearts {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://github.com/user-attachments/assets/6ca5f9d7-cbd0-46d7-b0eb-b1c0717a224c') repeat;
-    opacity: 0.2;
-    z-index: -1;
 }
 
 .container {
