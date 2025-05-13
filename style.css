@@ -1,8 +1,9 @@
- body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Great Vibes', cursive;
-    background-color: #ffcccc;
+    background: url('https://github.com/user-attachments/assets/6ca5f9d7-cbd0-46d7-b0eb-b1c0717a224c') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     text-align: center;
     overflow: hidden;
@@ -65,4 +66,4 @@ h1 {
     border-radius: 15px;
     display: inline-block;
     color: #fff;
-}
+} 
