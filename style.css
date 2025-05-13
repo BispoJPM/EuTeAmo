@@ -1,12 +1,21 @@
 body {
-  background-image: url('fundo.jpg');
-  background-size: contain;       /* mostra a imagem inteira */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;   /* mantém fixo ao rolar */
-  background-color: #000;         /* cor de fundo caso sobre espaço */
-  height: 100vh;                  /* ocupa a altura total da tela */
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    background-color: #ffcccc;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-hearts {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/LEpVPz2.png') repeat;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .container {
