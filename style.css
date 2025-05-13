@@ -1,8 +1,12 @@
 body {
-  background-image: url('fundo.jpg'); 
-  background-size: cover;
+  background-image: url('fundo.jpg');
+  background-size: contain;       /* mostra a imagem inteira */
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;   /* mantém fixo ao rolar */
+  background-color: #000;         /* cor de fundo caso sobre espaço */
+  height: 100vh;                  /* ocupa a altura total da tela */
+  margin: 0;
 }
 
 .container {
