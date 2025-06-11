@@ -40,17 +40,17 @@ function updateTimer() {
         `${years} anos, ${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos de amor`;
 }
 
-setInterval(updateTimer, 1000);
-updateTimer();
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.carousel-image');
+    let currentIndex = 0;
+    const intervalTime = 3000;
 
-const images = document.querySelectorAll('.carousel-image');
-let currentIndex = 0;
-const intervalTime = 3000; 
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
 
-function showNextImage() {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add('active'); 
-}
+    setInterval(showNextImage, intervalTime);
+});
 
-setInterval(showNextImage, intervalTime);
