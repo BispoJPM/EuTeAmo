@@ -43,7 +43,7 @@ function updateTimer() {
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.carousel-image');
     let currentIndex = 0;
-    const intervalTime = 3000;
+    const intervalTime = 2000;
 
     function showNextImage() {
         images[currentIndex].classList.remove('active');
