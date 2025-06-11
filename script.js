@@ -42,3 +42,15 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer();
+
+const images = document.querySelectorAll('.carousel-image');
+let currentIndex = 0;
+const intervalTime = 3000; 
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active'); 
+}
+
+setInterval(showNextImage, intervalTime);
